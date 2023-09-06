@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Planet di Tata Surya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-info">
+            <h1>Informasi Planet di Tata Surya</h1>
+            <h2>Disini Menampilkan Berbagai Info Mengenai Planet di Tata Surya Kita</h2>
+        </div>
+            <nav class="navbar">
+                <div class="administrator-button">
+                    <a class="button" href="admin.html"></a>
+                </div>
+            </nav>
+        </div>
+        <div class="image">
+            <img src="planet.jpg" alt="Gambar Planet">
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <h3>Jumlah Planet di Tata Surya</h3>
+            <p>Sejauh yang kita ketahui bahwa Terdapat Delapan Planet Utama di Tata Surya Kita</p>
+        </div>
+        <div class="card">
+            <h3>Luas Tata Surya</h3>
+            <p>Tata Surya Kita Berdiameter sekitar 2 tahun cahaya, atau sekitar 125.000 kali lebih jauh jarak dari Bumi ke Matahari</p>
+        </div>
+        <div class="card">
+            <h3>Nama Planet di Tata Surya</h3>
+            <p>Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan juga Neptunus sebagai planet utama terjauh</p>
+        </div>
+        <div class="card">
+            <h3>Penjelasan Tata Surya</h3>
+            <p>Kumpulan benda langit yang terdiri atas sebuah bintang yang disebut Matahari dan semua objek yang terikat oleh gravitasinya.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card isi-data">
+            <h2>Tambahkan Planet Baru</h2>
+            <form id="inputForm">
+                <div class="form-group">
+                    <label for="namaPlanet">Nama Planet:</label>
+                    <input type="text" id="namaPlanet" name="namaPlanet">
+                </div>
+                <div class="form-group">
+                    <label for="ukuranPlanet">Ukuran Planet:</label>
+                    <input type="text" id="ukuranPlanet" name="ukuranPlanet">
+                </div>
+                <div class="form-group">
+                    <label for="gambarPlanet">Gambar Planet:</label>
+                    <input type="file" id="gambarPlanet" name="gambarPlanet" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="penjelasanPlanet">Penjelasan Planet:</label>
+                    <textarea id="penjelasanPlanet" name="penjelasanPlanet"></textarea>
+                </div>
+                <button type="submit">Tambahkan</button>
+            </form>
+        </div>
+        <div class="result">
+            <div class="result-gambar">
+                <img src="" alt="Gambar" id="resultGambar">
+            </div>
+            <div class="result-info">
+                <h6 id="resultNamaPlanet">Nama Planet: -</h6>
+                <div id="resultPlanet">Ukuran Planet: -</div>
+                <div id="resultPenjelasan">Penjelasan Planet: -</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
